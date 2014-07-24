@@ -1,6 +1,6 @@
 def english_ruler(inches, depth):
     """
-    A recursion example for drawing an Enlgish ruler
+    A recursion example for drawing an Enlgish ruler.
     :param inches: Number of inches
     :param depth: The depth of the markings within an inch
     :return: An English ruler drawing
