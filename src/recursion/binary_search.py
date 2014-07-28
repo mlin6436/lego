@@ -17,6 +17,11 @@ def binary_search(data, target, low, high):
         if data[mid] == target:
             print('The target number exists')
         elif data[mid] < target:
+            '''
+            For the case of misusing recursion, such as using: binary_search(data, target, mid, high)
+            The Python interpreter is capable of raising an RuntimeError (maximum recursion depth exceeded)
+            The default maximum recursion depth value is 1000, this is configurable via sys.setrecursionlimit(n)
+            '''
             binary_search(data, target, mid + 1, high)
         else:
             binary_search(data, target, low, mid - 1)
