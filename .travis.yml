@@ -1,8 +1,5 @@
 language: python
-python:
-  - "3.2"
-  - "3.3"
-install: "pip3 install ."
+python: "3.4"
 script: nosetests
 
 
